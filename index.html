@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/assets/icons/webdevclub.svg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    #particles-js {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+    }
+
+    #root {
+      z-index: 1000;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Leet Clubs</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div id="root" class="bg-black h-screen flex flex-col justify-center items-center">
+    <div class="flex flex-col md:flex-row items-center" id="root">
+      <div class="md:ml-4 flex flex-col items-center">
+        <img src="./assets/icons/webdevclub.svg" alt="">
+        <p class="text-white text-lg w-4/5 md:w-auto md:text-2xl text-center pt-6 capitalize">1337 Club community</p>
+      </div>
+    </div>
+    <div>
+      <p class="text-white text-lg w-4/5 md:w-auto md:text-xl text-center pt-6 capitalize text-[#65d282]">comming soon</p>
+    </div>
+    <div class="socials text-white mt-6 flex space-x-12" id="root">
+      <a href="mailto:WebDevBG@club.1337.ma" class="email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-mail">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load("particles-js", "particlesjs-config.json", function () {
+      console.log("callback - particles.js config loaded");
+    });
+  </script>
+</body>
+
+</html>
